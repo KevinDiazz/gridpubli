@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ background-color: hsl(30, 38%, 92%);
+ 
+
+}
+
+.propaganda{
+    display:grid;
+    grid-template-areas:
+    "img informacion"
+    "img informacion";
+    width: 45rem;
+    
+   
+   
+   
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+      
+}
+.img{
+    grid-area: img;
+    
+               
+    
+}
+.informacion{
+   display: grid;
+    grid-area:informacion;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    max-width: 22.5rem;
+    align-items: flex-end;
+    padding:2rem;
+    box-sizing: border-box;
+    
+
+    
+}
+
+.imagen{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 100%;
+    height: 100%;
+
+}
+p, h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: rgb(134, 134, 134);
+}
+
+h4,h5, p{
+    background-color: hsl(0, 0%, 100%);
+    width: 69%;
+}
+h5{
+    font-family:'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.precio{
+    font-family: 'Fraunces', serif;
+    font-size:2.5rem;
+    color: hsl(158, 36%, 37%);
+    width: 80%;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.4rem;
+}
+s, sup{
+    background-color: white;
+    font-size: 0.9rem;
+    font-family: 'Fraunces', serif;
+    color: hsl(120, 0%, 52%);
+}
+
+@media (max-width:576px){
+    .main{margin-top: 0;
+        margin-bottom: 0rem;
+
+    }
+    .propaganda{
+        min-width: 3rem;
+        grid-template-areas:
+        "img" 
+        "img"
+        "informacion"
+        "informacion";
+    }
+    .informacion{
+        width: 100vw;
+        max-width: none;
+}
+.imagen{
+    height:20rem;
+}
+}
